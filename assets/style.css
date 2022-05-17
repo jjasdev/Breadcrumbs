@@ -62,8 +62,7 @@ header, footer{
 }
 
 main{
-    flex-grow: 1;
-    padding: 1.5rem 8rem 3rem;
+    flex-grow: 1;    
 }
 
 .breadcrumbs{
@@ -124,9 +123,25 @@ main{
 .breadcrumbs__steps-number--active {
     background-color: var(--primary-color);
 }
+.breadcrumbs__container {
+    padding: 0 8rem 3rem;
+}
 @media screen and (max-width: 991px) {
-    main {
-        padding: 1.5rem 3rem 3rem;
+    .breadcrumbs__container {
+        padding: 0 3rem 3rem;
+    }
+}
+@media screen and (max-width: 596px) {
+    .breadcrumbs__steps-separador,
+    .breadcrumbs__steps-number,
+    .breadcrumbs__steps-item {
+        font-size: .75rem;
+    }
+    .breadcrumbs__steps-separador {
+        padding: 0 .5rem;
+    }
+    .breadcrumbs__steps-number {
+        padding: .2rem .48rem;
     }
 }
 
